@@ -52,7 +52,7 @@ case $opcion in
   4)
     if [ -f "$HOME/EPNro1/salida/$FILENAME.txt" ]; then
       echo "Top 10 notas: "
-      #Ordeno en base a la columna 4, numericamente, descendentemente y muestro solo las primeras 10 lineas.
+      #Ordeno en base a la columna 5, numericamente, descendentemente y muestro solo las primeras 10 lineas.
       sort -k 5 -n -r "$HOME/EPNro1/salida/$FILENAME.txt" | head -n 10
     else
       echo "No existe el archivo $FILENAME"
