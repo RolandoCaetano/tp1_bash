@@ -9,6 +9,7 @@ opcion=0
 while [ $opcion -ne 6 ]
 do
   echo "---MENU---"
+  echo "Pasos: Ingresar opciòn numero 1, una vez creadas las carpetas, ingresar listas en carpeta entrada"
   echo "1) Crear entorno"
   echo "2) Correr proceso"
   echo "3) Listado de alumnos por padron"
@@ -44,7 +45,7 @@ case $opcion in
     echo "Alumnos ordenados por padron: "
     if [[ -f "$HOME/EPNro1/salida/$FILENAME.txt" ]]; then
       #Ordeno $FILENAME numericamente por padron
-      sort -n "$HOME/EPNro1/salida/$FILENAME.txt"
+      sort -n "$HOME/EPNro1/salida/$FILENAME.txt" 
     else
       echo "El archivo $FILENAME no existe."
     fi
